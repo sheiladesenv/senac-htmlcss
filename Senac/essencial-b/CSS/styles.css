@@ -1,11 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+ 
 body{
-    font-family: sans-serif;
+    background: linear-gradient(rgb(223, 169, 169), rgb(230, 230, 168), rgb(149, 216, 158));
 }
-
+ 
+h3{
+    color: aqua;
+}
+ 
+ul{
+    border: 1px solid blue;
+    background-color: aqua;
+}
+ 
+li{
+    color: brown
+    ;
+}
+ 
+/* Classe */
+ 
+.Paragrafo{
+background-color: rgb(8, 8, 8);
+color: rgb(245, 248 , 83);
+padding: 5px;
+}
+ 
+/* id */
+ 
+#titulo-com-id{
+    background-color: green;
+    color: #231270;
+    padding: 10px;
+    font-size: 40px;
+}
+ 
 h1{
-    font-size: 50px;
+    border-bottom: 2px solid blue;
+ 
 }
-
-p{
-    font-size:16px;
+ 
+.class-titulo{
+    border-bottom: 3px solid red;
 }
+#id-titulo{
+    border-bottom: 3px solid black;
+}
+ 
+/* nome das cores */
+.color-name {
+    color: crimson;
+ 
+}
+ 
+/* RGB */
+ 
+.rgb{
+    color: rgb(255,0,0)
+}
+ 
+.rgb-misturado{
+ 
+    color: rgb(199, 21, 47);
+}
+ 
+.rgba{
+    color: rgba(100, 99, 45, 0.3);
+}
+ 
+.hex{
+    color: #231270;
+}
+ 
+.hex-simplificado{
+    color: #a6e;
+}
+ 
+.hsl{
+    color:hsl(100, 20%, 50%)
+}
+ 
+ 
+.backgroudcolor{
+    background-color: #000;
+    color: gold;
+}
+ 
+    .bg-2{
+ 
+        background-color: rgb(100, 50, 33);
+        color: #00ffaa;
+    }
+ 
+ 
+    /* opacidade backgraud collor */
+ 
+    .bg-com-opacidade{
+        background-color: red;
+        opacity: 0.2;
+    }
+/* resolvendo erro da opacidade */
+    .bg-com-opacidade-2{
+        background-color: rgba(90, 100, 40, 0.2);
+        color: #000;
+       
+    }
+ 
+    /* background img */
+ 
+    .bgimage{
+        background-image: url(../img/masp2.jpg);
+        color: white;
+        padding: 20px;
+    }
+ 
+    /* centralizar background image */
+ 
+    /* aqui estou aplicando regra de estilo para dois elementos de uma so vez */
+ 
+        .bgimg-naocentral, .bgimg-central{
+            background-image: url(../img/senac-largo-treze.jpg);
+            height: 400px;
+            width: 400px;
+        }
+ 
+            .bgimg-central{
+                background-position: center;
+                background-size: cover;
+            }
+ 
+        .altura-largura{
+ 
+            height: 500px;
+            width: 500px;
+            background-color: blueviolet;
+        }
+        .altura-largura-nova{
+            height: 200px;
+            background-color: #999;
+        }
+ 
+        /* PADDING */
+ 
+        .sem-padding{
+            background-color: aqua;
+            padding: none;
+            width: 200px;
+            height: 200px;
+        }
+ 
+        .com-padding{
+            background-color: blueviolet;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+        }
+ 
+ 
+        .padding-lados{
+ 
+            background-color: crimson;
+            color: white;
+            padding-top: 10px;
+            padding-left: 150px;
+            padding-right: 5px;
+            padding-bottom: 40px;
+        }
+ 
+        /* shorthand */
+ 
+        .shorthand-padding{
+            background-color: #333;
+            padding: 6px 12px 18px 24px;
+        }
+ 
+        .shorthand-padding-2{
+            background-color: #555;
+            padding: 10px 20px;
+        }
+ 
+        /* border */
+        .border{
+            border: 5px solid blue;
+            padding: 10px;
+        }
+ 
+        .borde-2{
+            border: 2px dotted #785;
+            padding: 25px;
+        }
+ 
+        /* Borda individual */
+ 
+        .borda-esquerda{
+            background-color: #111;
+            color: white;
+            padding: 25px;
+           border-left: 3px solid yellow;
+        }
+ 
+        .borda-inferior{
+            background-color: #111;
+            color: white;
+            padding: 25px;
+            border-bottom: 7px double #548;
+        }
+ 
+        .borda-direita{
+            background-color:  cornflowerblue;
+            color: pink;
+            padding: 10px;
+            border-right: 2px dashed pink;
+           
+        }
+ 
+ 
+        .borda-superior{
+            background-color:  aquamarine;
+            color:#808080;
+            padding: 10px;
+            border-top: 2px dotted red;
+           
+        }
+ 
+ 
+        /* borda diferente em todos os lados */
+ 
+        .borda-total{
+            background-color: black;
+            color: white;
+            padding: 25px;
+            border-top: 5px dotted salmon;
+            border-right: 5px solid yellow;
+            border-bottom: 5px dashed orange;
+            border-left: 5px double rosybrown;
+ 
+        }
+ 
+        /*borda arrendodada */
+ 
+        .paragrafo-arredondado{
+            background-color: blueviolet;
+            color: white;
+            padding: 20px;
+            border: 5px solid red;
+            border-radius: 20px;
+ 
+        }
+ 
+ 
+        .paragrafo-arredondado-2{
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+ 
+        /* Margem */
+ 
+        .margem{
+            background-color: darkblue;
+            color: yellow;
+            margin: 10px;
+        }
+ 
+        .margem-no-topo{
+            background-color: dodgerblue;
+            padding: 10px;
+            margin-top: 70px;
+        }
+       
+ 
+        .margem-diferenciada{
+            background-color: cornflowerblue;
+            margin: 7px 10px 9px 30px;
+        }
+ 
+        .model{
+            background-color: aqua;
+            color: #000;
+            width: 200px;
+            padding: 10px 10px 15px 25px;
+            border: 5px solid violet;
+            border-radius: 10px;
+            margin: auto;
+        }
+       
+        /* ALINHAMENTO DE TEXTO */
+ 
+        .alinhamento-direita{
+            text-align: right;
+           
+        }
+ 
+        .centralizar-container{
+           border: 4px solid salmon;
+           width: 200px;
+           text-align: center;
+        }
+ 
+        /* decoraçao de texto */
+        .underline{
+            text-decoration: underline;
+        }
+ 
+        .line-through{
+            text-decoration: line-through;
+        }
+ 
+        .overline{
+            text-decoration: overline;
+            color: chocolate;
+        }
+ 
+        .remove-underline{
+            color: orange;
+            text-decoration: none;
+        }
+ 
+ 
+        /* fontes */
+ 
+        .fonte-serif{
+            font-family: serif;
+        }
+ 
+        .fonte-san-serif{
+            font-family: sans-serif;
+        }
+ 
+        .fonte-monospace{
+            font-family: monospace;
+        }
+ 
+        .fonte-cursive{
+            font-family: cursive;
+        }
+ 
+        .fonte-fantasy{
+            font-family: fantasy;
+        }
+ 
+        .outra-fonte{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+ 
+ 
+        /* importando fonte do google, o link da fonte vai sempre no topo da pagina CSS */
+ 
+        .trazer-fonte{
+            font-family: 'croissant one', cursive;
+ 
+        }
+ 
+ 
+        /* estilo de fonte */
+ 
+        .italico{
+           
+            font-style: italic;
+        }
+ 
+        /* espessura de fonte bold, posso usar tambem uma espessuar de 100 a 900 */
+ 
+        .bold{
+ 
+           font-weight: bold;
+        }
+ 
+        /* tamanho da fonte */
+ 
+        .tamanho-150px{
+            font-size: 150px;
+        }
+ 
+        .xx-small{
+            font-size: xx-small;
+        }
+ 
