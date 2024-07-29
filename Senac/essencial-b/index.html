@@ -3,92 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabeçalho e Elementos</title>
-    
-    <!-- CSS Esxternal -->
+    <title>Teste CSS</title>
     <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
-
-    <!-- CSS Internal -->
-     <style>
-        h1 {
-            color: green;
-        }
-     </style>
 </head>
 <body>
-    <!-- Títulos -->
-   <h1>Importante</h1> 
-   <h2 style="color: orange; font-size:50px">Tamanho menor 1</h2>
-   <h3>Tamanho menor 2</h3>
-   <h4>Tamanho menor 3</h4>
-   <h5>Tamanho menor 4</h5>
-   <h6>Menor</h6>
-
-   <!-- Linha Horizontal -->
-   <hr />
-
-   <!-- Parágrafo e quebra de linha -->
-    <!-- CSS Inline -->
-   <p style="color: red">Descreva o que empresa oferece</p> <br />
-   <p>Faça um resumo da história da empresa</p>
-   <!-- Comtrol + : agiliza o comentário -->
-   
-   <!-- Atributo href -->
-    <a href="https://www.google.com.br/?hl=pt-BR">Google</a>
-
-    <!-- Atributo src -->
-     <img src="img/logosenac.png" alt ="Logo do Senac"/>
-    
-     <!-- Lista não Ordenada -->
-      <ul type="square">
-        <li>Item 1</li>
-        <li>Item 2</li>
-      </ul>
-
-      <!-- Lista Ordenada com start-->
-       <ol start="10">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-       </ol>
-
-      <!-- Lista Ordenada com type-->
-      <ol type ="a">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-       </ol>
+    <h3>Titulo externo</h3>
  
-<!-- Tabelas -->
-<table border="1px" cellpadding="10px">
-    <tr>
-        <td>Coluna 1</td>
-        <td>Coluna 2</td>
-        <td>Coluna 3</td>
-    </tr>
-    <tr>
-        <td>Linha 1, Coluna 1</td>
-        <td>Linha 1, Coluna 2</td>
-        <td>Linha 1, Coluna 3</td>
-    </tr>
-    <tr>
-        <td>Linha 2, Coluna 1</td>
-        <td>Linha 2, Coluna 2</td>
-        <td>Linha 2, Coluna 3</td>
-    </tr>
-        </table>
-<!-- Elemento Dev -->
- <div id="container" style="color: blue;">
-    <div id="header">
-        <h1>Meu site</h1>
-    </div>
-    <div id="content">
-        Este é o conteúdo do meu site
-    </div>
-    <div id="footer">
-        <p>Copyright 2024</p>
-    </div>
- </div>
+      <!-- Classe -->
+     <!-- se fize p. enter ele ja cria a classe -->
+    <p class="Paragrafo">esse é um paragrafo com classe</p>
+    <p class="Paragrafo">esse é um novo paragrafo com classe</p>
+    <p class="Paragrafo">esse é um ultimo paragrafo com classe</p>
+ 
+    <!-- id, id# ja cria  -->
+ 
+    <h2 id="titulo-com-id">Titulo com id</h2>
+ 
+ <!-- Regra de Ordem -->
+ <h1 id="id-titulo" class="class-titulo">Título 1</h1>
+ <h1 class="class-titulo" >Título 2</h1>
+ <h1 >Título 3</h1>
+ 
+    <ul>
+        <li>Café</li>
+        <li>Açucar</li>
+        <li>adoçante</li>
+    </ul>
+ 
+    <!-- Classe -->
+     <!-- se fize p. enter ele ja cria a classe -->
+ 
+     <!-- nome das cores se eu clica em .pcolor-name ja cria a class-->
+      <p class="color-name">Paragrafo</p>
+      <p class="rgb">Paragrafo com RGB</p>
+      <p class="rgb-misturado">Paragrafo com RGB MISTURADO</p>
+      <p class="rgba">Paragrafo com RGBA</p>
+      <p class="hex">Paragrafo com hexadecimal</p>
+      <p class="hex-simplificado">Paragrafo com hexadecimal simplificado</p>
+      <p class="hsl">cores em hsl</p>
+ 
+      <!-- backgroud color -->
+ 
+      <p class="backgroudcolor">Paragrafo com backgroudcolor</p>
+      <h2 class="bg-2">Paragrafo bg</h2>
+ 
+      <!-- opacidade no backgroud color -->
+ 
+      <div class="bg-com-opacidade">
+        <p>Opacidade quase invisivel</p>
+      </div>
+ 
+      <div class="bg-com-opacidade-2">
+        <p>Opacidade quase invisivel</p>
+      </div>
+<!-- background img -->
+      <h1 class="bgimage">Titulo com imagem</h1>
+ 
+      <!-- centralizar background image -->
+      <div class="bgimg-naocentral"></div>
+ 
+      <div class="bgimg-central"></div>
+ 
+      <!-- altura e largura -->
+ 
+      <div class="altura-largura"></div>
+      <div class="altura-largura-nova"></div>
+ 
+      <!-- padding -->
+ 
+      <div class="sem-padding">Essa div nao tem padding</div>
+      <div class="com-padding">Essa div TEM PADDING</div>
+ 
+ 
+      <!-- padding por lados -->
+ 
+      <p class="padding-lados">Esse elemento tem padding diferente em seus lados </p>
+ 
+      <!-- shorthand properties, propriedade abreviadas -->
+       <p class="shorthand-padding">algum texto</p>
+       <p class="shorthand-padding-2">algum texto2</p>
+ 
+       <!-- border -->
+      <div class="border">Borda</div>
+      <div class="borde-2">Borda 2</div>
+ 
+      <!-- borda individual para os lados -->
+ 
+      <p class="borda-esquerda">Borda da esquerda</p>
+      <p class="borda-inferior">Borda Inferior</p>
+      <p class="borda-direita">Borda direita</p>
+      <p class="borda-superior">Borda superior</p>
+ 
+      <!-- borda diferente em todos os lados  -->
+ 
+      <p class="borda-total">Borda diferente em todos os lados</p>
+ 
+      <!-- borda arredondada -->
+ 
+      <div class="paragrafo-arredondado">Paragráfo arredondado</div>
+      <div class="paragrafo-arredondado-2">Paragráfo arredondado 2</div>
+ 
+      <!-- margem -->
+ 
+      <div class="margem">Margem</div>
+      <div class="margem-no-topo">Margem no topo</div>
+      <div class="margem-diferenciada">Margem com shothand</div>
+      <div class="model"><p>Tenho todas as propiedades do Box model</p></div>
 
-    </body>
+      <!-- alinhamento de texto -->
+       <p class="alinhamento-direita">alinhando texto a direita</p>
+       <div class="centralizar-container">
+        <h2>Centralizado</h2>
+        <p>Paragrafo teste</p>
+       </div>
+ 
+       <!-- decoraçao de texto -->
+        <p class="underline">eu tenho um sublinhado</p>
+        <p class="line-through">eu tenho um risco</p>
+        <p class="overline">eu tenho uma sobrelinha</p>
+        <a href="#" class="remove-underline">sem sublinhado</a>
+ 
+ 
+        <!-- dicas segurar SHIFT + ALT + seta paara baixo, copia a linha de cima e cola embaixo -->
+ 
+        <p class="fonte-serif">Essa e uma fonte Serif</p>
+        <p class="fonte-san-serif">Essa e uma fonte san-Serif</p>
+        <p class="fonte-monospace">Essa e uma fonte monospace</p>
+        <p class="fonte-cursive">Essa e uma fonte cursive</p>
+        <p class="fonte-fantasy">Essa e uma fonte fantasy</p>
+        <p class="outra-fonte">Essa e uma fonte do navegador: Fonte da mesma familia</p>
+ 
+ 
+        <!-- importando fonte do google -->
+ 
+        <p class="trazer-fonte">Esta fonte vem de um site</p>
+ 
+ 
+        <!-- Estilo de fonte -->
+ 
+        <p class="italico">Fonte em italico</p>
+ 
+        <!-- espessua da fonte -->
+ 
+        <p class="bold">Fonte com espessura</p>
+ 
+        <!-- tamanho da Fonte -->
+ 
+        <p class="tamanho-150px">Essa fonte tem 150px</p>
+ 
+        <p class="xx-small">Essa fonte é xx-small</p>
+ 
+ 
+</body>
 </html>
